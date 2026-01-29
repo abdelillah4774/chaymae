@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 260 60% 5%;    /* Deep Purple/Black */
+  --foreground: 0 0% 100%;     /* White */
+  --primary: 335 100% 75%;     /* Hot Pink */
+  --secondary: 260 80% 60%;    /* Vivid Purple */
+  --font-display: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-script: 'Great Vibes', cursive;
+}
+
+body {
+  @apply bg-background text-foreground antialiased;
+  background-image: radial-gradient(circle at 50% 0%, #2a0a3a 0%, #050010 70%);
+}
+
+.glass-card {
+  @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-xl;
+}
+
+.text-glow {
+  text-shadow: 0 0 20px rgba(255, 126, 179, 0.5);
+}
